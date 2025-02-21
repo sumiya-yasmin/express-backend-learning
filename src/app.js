@@ -1,6 +1,7 @@
 const express = require('express')
 const app = express()
 const port = 3000
+app.use(express.json())
 const products = [
     {
       "name": "baked beans",
@@ -82,7 +83,11 @@ app.get('/status', (req, res) => {
 app.get('/api/products', (req,res)=>{
  res.send(products)
 })
-
+ app.post('/api/products', (req,res)=>{
+    const newProduct = req.body
+    products.push(newProduct)
+    res.status(201).json(newProduct)
+ })
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
