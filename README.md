@@ -32,13 +32,22 @@ This repository contains my learning journey as I explore backend development wi
 * **TypeScript Migration:** Codebase gradually migrated to TypeScript.
 
 ##Tasks 
-[] Create a simple CRUD app with express
+[x] Create a simple CRUD app with express
+
 [] Add router, middleware, and error handling
+
 []Add mongoDB
+
 []Validation with zod
+
 []File upload
+
 [] Authentication
+
 []Logging
+
 []environment variables
+
 []Dockerize app
+
 [] Migrate to TypeScript
