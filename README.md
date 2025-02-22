@@ -31,23 +31,24 @@ This repository contains my learning journey as I explore backend development wi
 * **Dockerization:** Application packaged into a Docker container for easy deployment.
 * **TypeScript Migration:** Codebase gradually migrated to TypeScript.
 
-##Tasks 
-[x] Create a simple CRUD app with express
+## Tasks
 
-[] Add router, middleware, and error handling
+- [x] Create a simple CRUD app with express
 
-[]Add mongoDB
+- [ ] Add router, middleware, and error handling
 
-[]Validation with zod
+- [ ] Add mongoDB
 
-[]File upload
+- [ ] Validation with zod
 
-[] Authentication
+- [ ] File upload
 
-[]Logging
+- [ ] Authentication
 
-[]environment variables
+- [ ] Logging
 
-[]Dockerize app
+- [ ] environment variables
 
-[] Migrate to TypeScript
+- [ ] Dockerize app
+
+- [ ] Migrate to TypeScript
