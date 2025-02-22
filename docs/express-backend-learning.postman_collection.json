@@ -1,0 +1,372 @@
+{
+	"info": {
+		"_postman_id": "edb2dd94-2341-4703-95cd-2804846b641a",
+		"name": "express-backend-learning",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42522637"
+	},
+	"item": [
+		{
+			"name": "products api",
+			"item": [
+				{
+					"name": "Get Products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "example-1",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/products",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"products"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1476"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"5c4-XsyyyyHcQC8na2UcVL8sW+N+DXA\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 21 Feb 2025 21:02:06 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"ae6643ec-ea11-4335-bef0-9c83df8e0d5c\",\n        \"name\": \"baked beans\",\n        \"price\": 0.4,\n        \"image\": \"beans.jpg\",\n        \"type\": \"vegetables\"\n    },\n    {\n        \"_id\": \"b658a8d0-2953-46f6-8995-46001deec1a8\",\n        \"name\": \"hot dogs\",\n        \"price\": 1.99,\n        \"image\": \"hotdogs.jpg\",\n        \"type\": \"meat\"\n    },\n    {\n        \"_id\": \"f384d2dd-6c1e-47d3-9ebb-85d196af0c1e\",\n        \"name\": \"spam\",\n        \"price\": 2.85,\n        \"image\": \"spam.jpg\",\n        \"type\": \"meat\"\n    },\n    {\n        \"_id\": \"b47a0f37-d977-47f0-9ac7-aa609ef204fa\",\n        \"name\": \"refried beans\",\n        \"price\": 0.99,\n        \"image\": \"refried.jpg\",\n        \"type\": \"vegetables\"\n    },\n    {\n        \"_id\": \"12765841-6b6d-455c-b10a-3ed33ac59416\",\n        \"name\": \"kidney beans\",\n        \"price\": 0.58,\n        \"image\": \"kidney.jpg\",\n        \"type\": \"vegetables\"\n    },\n    {\n        \"_id\": \"53eb92af-a46e-461a-8479-f669b4b242c3\",\n        \"name\": \"garden peas\",\n        \"price\": 0.52,\n        \"image\": \"gardenpeas.jpg\",\n        \"type\": \"vegetables\"\n    },\n    {\n        \"_id\": \"a7193197-3f18-4c2e-8edf-7468971d1323\",\n        \"name\": \"mushy peas\",\n        \"price\": 0.58,\n        \"image\": \"mushypeas.jpg\",\n        \"type\": \"vegetables\"\n    },\n    {\n        \"_id\": \"c324e39d-7c40-4ad3-9e52-18096df78b01\",\n        \"name\": \"corned beef\",\n        \"price\": 2.39,\n        \"image\": \"cornedbeef.jpg\",\n        \"type\": \"meat\"\n    },\n    {\n        \"_id\": \"e4264cf2-64ca-4f5f-b4b5-b9ed8aac441d\",\n        \"name\": \"tomato soup\",\n        \"price\": 1.4,\n        \"image\": \"tomatosoup.jpg\",\n        \"type\": \"soup\"\n    },\n    {\n        \"_id\": \"ab90d39c-e553-4339-882a-1ad43402f1b8\",\n        \"name\": \"chopped tomatoes\",\n        \"price\": 0.45,\n        \"image\": \"tomato.jpg\",\n        \"type\": \"vegetables\"\n    },\n    {\n        \"_id\": \"accd87df-7220-429a-9b4c-79c7a3ca10fe\",\n        \"name\": \"chicken noodle soup\",\n        \"price\": 1.89,\n        \"image\": \"chickennoodle.jpg\",\n        \"type\": \"soup\"\n    },\n    {\n        \"_id\": \"bab437d6-0e27-4234-aaa0-57662c535b1e\",\n        \"name\": \"carrot and coriander soup\",\n        \"price\": 1.49,\n        \"image\": \"carrotcoriander.jpg\",\n        \"type\": \"soup\"\n    }\n]"
+						},
+						{
+							"name": "http://localhost:3000/api/products",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/products",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"products"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1362"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"552-/WitzM/NqGAjXKKJYQ7Zclyru6k\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 21 Feb 2025 23:44:12 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"d3062d9f-8d55-4a0c-8ac5-eb5d728f20a1\",\n        \"name\": \"baked beans\",\n        \"price\": 0.4,\n        \"image\": \"beans.jpg\",\n        \"type\": \"vegetables\"\n    },\n    {\n        \"_id\": \"89ac8699-2411-44c0-8dd3-9d66233b0a54\",\n        \"name\": \"spam\",\n        \"price\": 2.85,\n        \"image\": \"spam.jpg\",\n        \"type\": \"meat\"\n    },\n    {\n        \"_id\": \"da4be28c-07f6-4580-be28-64a59c0a1855\",\n        \"name\": \"refried beans\",\n        \"price\": 0.99,\n        \"image\": \"refried.jpg\",\n        \"type\": \"vegetables\"\n    },\n    {\n        \"_id\": \"3425b9eb-18b2-4103-bb08-32e95ae9b973\",\n        \"name\": \"kidney beans\",\n        \"price\": 0.58,\n        \"image\": \"kidney.jpg\",\n        \"type\": \"vegetables\"\n    },\n    {\n        \"_id\": \"c47950eb-59be-4b2d-a7ed-f1e9c6bbec7a\",\n        \"name\": \"garden peas\",\n        \"price\": 0.52,\n        \"image\": \"gardenpeas.jpg\",\n        \"type\": \"vegetables\"\n    },\n    {\n        \"_id\": \"6578f026-d911-447e-8a76-4853d3268e0b\",\n        \"name\": \"mushy peas\",\n        \"price\": 0.58,\n        \"image\": \"mushypeas.jpg\",\n        \"type\": \"vegetables\"\n    },\n    {\n        \"_id\": \"d769bf9e-44be-4e81-a9d8-9f97eddc1402\",\n        \"name\": \"corned beef\",\n        \"price\": 2.39,\n        \"image\": \"cornedbeef.jpg\",\n        \"type\": \"meat\"\n    },\n    {\n        \"_id\": \"978aba21-a272-457e-a9bf-df52cbd5d603\",\n        \"name\": \"tomato soup\",\n        \"price\": 1.4,\n        \"image\": \"tomatosoup.jpg\",\n        \"type\": \"soup\"\n    },\n    {\n        \"_id\": \"ba19d002-6f97-4f89-a36f-aafa5348a204\",\n        \"name\": \"chopped tomatoes\",\n        \"price\": 0.45,\n        \"image\": \"tomato.jpg\",\n        \"type\": \"vegetables\"\n    },\n    {\n        \"_id\": \"55cdc5e0-8c97-4e36-9110-9e944d0c54fb\",\n        \"name\": \"chicken noodle soup\",\n        \"price\": 1.89,\n        \"image\": \"chickennoodle.jpg\",\n        \"type\": \"soup\"\n    },\n    {\n        \"_id\": \"63496dcf-3b0c-4f93-bc79-d605819e4140\",\n        \"name\": \"carrot and coriander soup\",\n        \"price\": 1.49,\n        \"image\": \"carrotcoriander.jpg\",\n        \"type\": \"soup\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Add Products",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "example-1",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"new product\",\r\n    \"price\": 0.42,\r\n    \"image\": \"refried.jpg\",\r\n    \"type\": \"vegetables\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/products",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"products"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "122"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"7a-rB246dN56hA3XUnRpA5hXkbuDoU\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 21 Feb 2025 21:02:16 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"f7a42d9b-b5bb-4491-8c1d-44b9acfddac7\",\n    \"name\": \"new product\",\n    \"price\": 0.42,\n    \"image\": \"refried.jpg\",\n    \"type\": \"vegetables\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Update Products",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "example-1",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Updated product\",\r\n    \"price\": 0.99,\r\n    \"image\": \"refried.jpg\",\r\n    \"type\": \"vegetables\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/products/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"products",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "d3062d9f-8d55-4a0c-8ac5-eb5d728f20a1"
+								}
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "126"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"7e-RPIu0UA9epW0L+XrlcbrPUH7Pl8\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 21 Feb 2025 23:39:23 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"d3062d9f-8d55-4a0c-8ac5-eb5d728f20a1\",\n    \"name\": \"Updated product\",\n    \"price\": 0.99,\n    \"image\": \"refried.jpg\",\n    \"type\": \"vegetables\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete Products",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "example-1",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/products/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"products",
+								":id"
+							],
+							"query": [
+								{
+									"key": null,
+									"value": "",
+									"disabled": true
+								}
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1ee6490b-47e1-4269-8450-8d55469619f8"
+								}
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "42"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2a-a+2htZNpkCDaj0ausIFBiheaYZ4\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 21 Feb 2025 23:52:46 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Product deleted successfully\"\n}"
+				}
+			]
+		}
+	]
+}
