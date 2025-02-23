@@ -1,24 +1,14 @@
-require('dotenv').config();
+
+const config = require('./config');
 const express = require('express');
-const mongoose = require('mongoose');
+const port = config.PORT;
 const {configureRouter} = require('./router');
 const { logRequestMiddleware, errorHandler } = require('./middlewares');
+const connectDB = require('./db');
 const app = express();
-const port = 3000;
-const MONGO_URI =process.env.MONGO_URI;
-const MONGO_DB_NAME=process.env.MONGO_DB;
 
-const connectMongodb=()=>{
-  console.log("Connecting Mongodb")
-  mongoose.connect(MONGO_URI,{
-    dbName: MONGO_DB_NAME,
-    }).then(()=>{
-      console.log("Mongodb Connected sucessfully")
-    }).catch((error)=>{
-      console.error(`Mongodb connection failed ${error}`)
-    })
-}
-connectMongodb();
+
+connectDB();
 
 app.use(express.json())
 app.use(logRequestMiddleware)
