@@ -104,7 +104,8 @@ const products = [
   const deleteProducts =(id)=>{
     const productIndex = products.findIndex((product)=>product._id===id);
     if(productIndex===-1){
-        throw new Error(`No product found with index ${id}`)
+        // throw new Error(`No product found with index ${id}`)
+        throw new Error(`Product not found`)
     }
     products.splice(productIndex,1)
     return true;
