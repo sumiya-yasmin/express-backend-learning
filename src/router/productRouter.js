@@ -1,7 +1,7 @@
 const express =require('express');
-const productRouter =express();
+const productRouter =express.Router();
 const { v4: uuidv4 } = require('uuid');
-app.use(express.json())
+// app.use(express.json())
 
 const products = [
     { 
