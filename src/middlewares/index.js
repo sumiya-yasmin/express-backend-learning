@@ -1,6 +1,6 @@
 const {logRequestMiddleware} = require('./logMiddleware')
-const {errorHandlerMiddleware} = require('./errorHandler')
+const {errorHandler} = require('./errorHandler')
 module.exports={
     logRequestMiddleware,
-    errorHandlerMiddleware
+    errorHandler
 }
