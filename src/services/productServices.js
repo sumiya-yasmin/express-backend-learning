@@ -1,5 +1,6 @@
 const { v4: uuidv4 } = require('uuid');
 const { NotFoundError } = require('../errors');
+const { Product } = require('../models');
 const products = [
     { 
       _id: 'd3062d9f-8d55-4a0c-8ac5-eb5d728f20a1',
@@ -86,32 +87,35 @@ const products = [
     }
   ]
 
-  const getAllProducts = ()=>products;
+  const getAllProducts =async () => {
+     const products = await Product.find({deleted: false});
+     return products
+  }
 
-  const createProducts =(productPayload)=>{
-    const newProduct = {_id:uuidv4(), ...productPayload}
-     products.unshift(newProduct)
+  const getProductById = async (id) =>{
+    const product = await Product.findOne({_id: id, deleted: false}).select('_id name price image categories');
+    return product;
+  }
+
+  const createProducts = async (productPayload)=>{
+    const newProduct = new Product(productPayload)
+   await newProduct.save();
      return newProduct;
   }
-  const updateProducts =(id,payload)=>{
-    const updatedProductIndex = products.findIndex((product)=>product._id===id);
-    if(updatedProductIndex===-1){
-     throw new NotFoundError(`No product found with index ${id}`)
-    }
-    products[updatedProductIndex]={...products[updatedProductIndex],...payload};
-    return products[updatedProductIndex];
+  const updateProducts = async(id,payload)=>{
+    return await Product.findByIdAndUpdate({_id:id}, payload)
   }
 
-  const deleteProducts =(id)=>{
-    const productIndex = products.findIndex((product)=>product._id===id);
-    if(productIndex===-1){
-        throw new NotFoundError(`No product found with index ${id}`)
-    }
-    products.splice(productIndex,1)
+  const deleteProducts =async (id)=>{
+     await Product.findOneAndDelete(
+      {_id:id},
+      {deleted: true, deletedAt: new Date()}
+    );
     return true;
   }
   module.exports ={
     getAllProducts,
+    getProductById,
     createProducts,
     updateProducts,
     deleteProducts
